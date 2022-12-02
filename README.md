@@ -7,7 +7,7 @@ Quick DBD
 PostgreSQL and pgAdmin 4
 
 Analyzis:
-Create a employee database from six (6) source tables based on ERD:
+Create a employee database from six (6) source tables based on ERD as shown below:
 ![EmployeeDB_corrected](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/8fe1f28002145b1d6d31c31df98789ae835ca774/EmployeeDB_corrected.png)
 
 Query the database to inquire on number of retiring employes. 
