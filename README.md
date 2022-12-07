@@ -13,7 +13,7 @@ In order to analyze the HR data, an Employee Database was created based on the e
 
 ![EmployeeDB_corrected](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/8fe1f28002145b1d6d31c31df98789ae835ca774/EmployeeDB_corrected.png)
 
-Once the Employee Database was created, it was filtered using SQL queries to find current employees who are in retirement age and what is their most recent title. 
+Once the Employee Database was created, it was filtered using SQL queries to find current employees who are in retirement age and their most recent title. 
 
 ## Results
 The [retirement_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/19c1eb13c2efdc16b1b359975aa05fd6bb84ce4f/Data/retirement_titles.csv) table holds all the titles of retirement-age employees, i.e., those who were born between January 1, 1952 and December 31, 1955. Following section of the code ([Employee_Database_challenge](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/9ad29dae426e9bad4b13f59138cf436fd41dfb59/Queries/Employee_Database_challenge.sql)) was used for this query:
