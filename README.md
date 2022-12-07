@@ -19,7 +19,7 @@ create a mentorship-eligibility table that holds the current employees who were 
 Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
 
 ## Results
-The [retirement_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/19c1eb13c2efdc16b1b359975aa05fd6bb84ce4f/Data/retirement_titles.csv) table (first ten rows shown below) holds all the titles of retirement-age employees, i.e., those who were born between January 1, 1952 and December 31, 1955. Following section of the code ([Employee_Database_challenge](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/eb6c106923eec32f0185da8f0593ece89dbb43c6/Queries/Employee_Database_challenge.sql)) was used for this query:
+The [retirement_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/19c1eb13c2efdc16b1b359975aa05fd6bb84ce4f/Data/retirement_titles.csv) table (first ten rows out of 133776 shown below) holds all the titles of retirement-age employees, i.e., those who were born between January 1, 1952 and December 31, 1955. Following section of the code ([Employee_Database_challenge](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/eb6c106923eec32f0185da8f0593ece89dbb43c6/Queries/Employee_Database_challenge.sql)) was used for this query:
 
 ````
 ```
