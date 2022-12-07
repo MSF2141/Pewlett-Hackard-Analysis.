@@ -81,5 +81,27 @@ ORDER BY unique_titles.count DESC;
 <br />
 <br />
 <br />
+
+````
+```
+SELECT DISTINCT ON (employees.emp_no) employees.emp_no, 
+	   			      employees.first_name,
+	   			      employees.last_name,
+	   			      employees.birth_date,
+	   			      dept_emp.from_date,
+	   			      dept_emp.to_date,
+	   			      titles.title 
+INTO mentorship_eligibilty 
+FROM employees
+LEFT JOIN dept_emp 
+ON employees.emp_no = dept_emp.emp_no
+LEFT JOIN titles
+ON employees.emp_no = titles.emp_no
+WHERE (dept_emp.to_date = '9999-01-01')
+AND (birth_date BETWEEN '1965-01-01' AND '1965-12-31')
+ORDER BY employees.emp_no;
+```
+````
+
 ## Summary
 Analysis show that there are 25916 Senior Engineers, 24926 Senior Staffs, 9285 Engineers, 7363 Staffs, 3603 Technique Leaders, 1090 Assistant Engineers, and 2 Managers who will be retiring.
