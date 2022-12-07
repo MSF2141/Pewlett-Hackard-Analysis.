@@ -1,7 +1,7 @@
 # Employee Database Analysis
 
 ## Objective
-Analysis of the HR data for the PH company to know the number of retiring employes - specifically, the number of retiring employees by job title.
+Analysis of the HR data for the PH company to know the number of retiring employes and employees who are qualified to mentor the next generation of PH employees.
 
 ## Softwares
 - Quick DBD
@@ -13,10 +13,7 @@ In order to analyze the HR data, an Employee Database was created based on the e
 
 ![EmployeeDB_corrected](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/8fe1f28002145b1d6d31c31df98789ae835ca774/EmployeeDB_corrected.png)
 
-Once the Employee Database was created, it was filtered using SQL queries to find current employees who are in retirement age and their most recent title. 
-
-create a mentorship-eligibility table that holds the current employees who were born between January 1, 1965 and December 31, 1965.
-Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
+Once the Employee Database was created, it was filtered using SQL queries to find all current employees who are in retirement age and their most recent job title. In addition, Employee Database was filtered using the SQL query to find all the current employes who are qualified to mentor the next generation of employees. 
 
 ## Results
 The [retirement_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/19c1eb13c2efdc16b1b359975aa05fd6bb84ce4f/Data/retirement_titles.csv) table (first ten rows out of 133776 shown below) holds all the titles of retirement-age employees, i.e., those who were born between January 1, 1952 and December 31, 1955. Following section of the code ([Employee_Database_challenge](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/eb6c106923eec32f0185da8f0593ece89dbb43c6/Queries/Employee_Database_challenge.sql)) was used for this query:
@@ -64,7 +61,7 @@ ORDER BY retirement_titles.emp_no, retirement_titles.to_date DESC;
 <br />
 <br />
 <br />
-The [retiring_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/667b71b70c010f8b582bccbe269f7a3c8654e115/Data/retiring_titles.csv) table (shown below) contains the number of retirement-age employees by their most recent job title using the COUNT statement. In additon, the retiring_titles table takes into consideration only the current employees and all the employees who have already left the company are excludes from the data table. Following section of the code ([Employee_Database_challenge](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/eb6c106923eec32f0185da8f0593ece89dbb43c6/Queries/Employee_Database_challenge.sql)) was used for this query: 
+The [retiring_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/667b71b70c010f8b582bccbe269f7a3c8654e115/Data/retiring_titles.csv) table (shown below) contains the number of retirement-age employees by their most recent title using the COUNT statement. In additon, the retiring_titles table takes into consideration only the current employees and all the employees who have already left the company are excludes from the data table. Following section of the code ([Employee_Database_challenge](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/eb6c106923eec32f0185da8f0593ece89dbb43c6/Queries/Employee_Database_challenge.sql)) was used for this query: 
 
 ````
 ```
