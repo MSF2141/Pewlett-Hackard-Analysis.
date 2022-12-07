@@ -22,7 +22,7 @@ Create a Retirement Titles table that holds all the titles of employees who were
 
 
 ````
-```
+```ruby
 SELECT employees.emp_no,
      employees.first_name,
      employees.last_name,
