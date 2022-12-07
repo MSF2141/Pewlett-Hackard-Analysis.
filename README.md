@@ -16,7 +16,7 @@ In order to analyze the HR data, an Employee Database was created based on the e
 Once the Employee Database was created, it was filtered using SQL queries to find current employees who are in retirement age and their most recent title. 
 
 ## Results
-The [retirement_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/19c1eb13c2efdc16b1b359975aa05fd6bb84ce4f/Data/retirement_titles.csv) table (first ten rows shown below) holds all the titles of retirement-age employees, i.e., those who were born between January 1, 1952 and December 31, 1955. Following section of the code ([Employee_Database_challenge](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/9ad29dae426e9bad4b13f59138cf436fd41dfb59/Queries/Employee_Database_challenge.sql)) was used for this query:
+The [retirement_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/19c1eb13c2efdc16b1b359975aa05fd6bb84ce4f/Data/retirement_titles.csv) table (first ten rows shown below) holds all the titles of retirement-age employees, i.e., those who were born between January 1, 1952 and December 31, 1955. Following section of the code ([Employee_Database_challenge](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/eb6c106923eec32f0185da8f0593ece89dbb43c6/Queries/Employee_Database_challenge.sql)) was used for this query:
 
 ````
 ```
@@ -41,7 +41,7 @@ Because some employees have multiple titles â€” for example, due to promotions â
 <br />
 <br />
 <br />
-The [unique_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/180ea5c039c4c21314f5b68bff2f06445709ba23/Data/unique_titles.csv) table (first ten rows shown below) contains only the most recent title for each employee using the DISTINCT ON statement. Following section of the code ([Employee_Database_challenge](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/9ad29dae426e9bad4b13f59138cf436fd41dfb59/Queries/Employee_Database_challenge.sql)) was used for this query:
+The [unique_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/180ea5c039c4c21314f5b68bff2f06445709ba23/Data/unique_titles.csv) table (first ten rows shown below) contains only the most recent title for each employee using the DISTINCT ON statement. Following section of the code ([Employee_Database_challenge](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/eb6c106923eec32f0185da8f0593ece89dbb43c6/Queries/Employee_Database_challenge.sql)) was used for this query:
 
 ````
 ```
@@ -61,7 +61,7 @@ ORDER BY retirement_titles.emp_no, retirement_titles.to_date DESC;
 <br />
 <br />
 <br />
-The [retiring_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/667b71b70c010f8b582bccbe269f7a3c8654e115/Data/retiring_titles.csv) table (shown below) contains the number of retirement-age employees by their most recent job title using the COUNT statement. In additon, the retiring_titles table takes into consideration only the current employees and all the employees who have already left the company are excludes from the data table. Following section of the code ([Employee_Database_challenge](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/9ad29dae426e9bad4b13f59138cf436fd41dfb59/Queries/Employee_Database_challenge.sql)) was used for this query: 
+The [retiring_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/667b71b70c010f8b582bccbe269f7a3c8654e115/Data/retiring_titles.csv) table (shown below) contains the number of retirement-age employees by their most recent job title using the COUNT statement. In additon, the retiring_titles table takes into consideration only the current employees and all the employees who have already left the company are excludes from the data table. Following section of the code ([Employee_Database_challenge](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/eb6c106923eec32f0185da8f0593ece89dbb43c6/Queries/Employee_Database_challenge.sql)) was used for this query: 
 
 ````
 ```
@@ -81,7 +81,7 @@ ORDER BY unique_titles.count DESC;
 <br />
 <br />
 <br />
-The [mentorship_eligibility](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/b601dcc4068c422427f04241432a7411532b9523/Data/mentorship_eligibility.csv) table contains the list of employees who are eligible to participate in a mentorship program. Following section of the code ([Employee_Database_challenge](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/9ad29dae426e9bad4b13f59138cf436fd41dfb59/Queries/Employee_Database_challenge.sql)) was used for this query: 
+The [mentorship_eligibility](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/b601dcc4068c422427f04241432a7411532b9523/Data/mentorship_eligibility.csv) table contains the list of employees who are eligible to participate in a mentorship program. Following section of the code ([Employee_Database_challenge](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/eb6c106923eec32f0185da8f0593ece89dbb43c6/Queries/Employee_Database_challenge.sql)) was used for this query: 
 
 ````
 ```
