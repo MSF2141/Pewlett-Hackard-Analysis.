@@ -8,7 +8,7 @@ Analysis of the HR data for the PH company to know the number of retiring employ
 - PostgreSQL and pgAdmin 4
 
 ## Analysis
-- Create an Employee Database based on the entity relationship diagram, shown below. The Employee database was created from the following six (6) source tables: [departments](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/6fd7a0dbeadaab27cd0da36f2696bae390c65024/Data/departments.csv), [dept_emp](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/fd31e8af4ec01033a5251bdd40f4213a55006d05/Data/dept_emp.csv), [dept_manager](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/715eb31e77e2a2404af35849f5fa4fd0e7fd6769/Data/dept_manager.csv), [employees](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/0d0f29f9b7206340b23d879e3dce452120255bb4/Data/employees.csv), [salaries](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/bbf490d37780e5fa46727235e5fc4a86f67dd21d/Data/salaries.csv), [titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/8055755fae4ef01166962f3c0fa0efe4d42d7ede/Data/titles.csv). The code for creation of the Employee Database can be found here:
+In order to analyze the HR data, an Employee Database needs to be created based on the entity relationship diagram, shown below. The Employee database was created from the following six (6) source tables: [departments](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/6fd7a0dbeadaab27cd0da36f2696bae390c65024/Data/departments.csv), [dept_emp](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/fd31e8af4ec01033a5251bdd40f4213a55006d05/Data/dept_emp.csv), [dept_manager](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/715eb31e77e2a2404af35849f5fa4fd0e7fd6769/Data/dept_manager.csv), [employees](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/0d0f29f9b7206340b23d879e3dce452120255bb4/Data/employees.csv), [salaries](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/bbf490d37780e5fa46727235e5fc4a86f67dd21d/Data/salaries.csv), [titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/8055755fae4ef01166962f3c0fa0efe4d42d7ede/Data/titles.csv). The code for creation of the Employee Database can be found here:
 [schema](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/88f39d43b732f025475042ad5b01fd094b01443e/Queries/schema.sql).
 
 ![EmployeeDB_corrected](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/8fe1f28002145b1d6d31c31df98789ae835ca774/EmployeeDB_corrected.png)
@@ -16,6 +16,7 @@ Analysis of the HR data for the PH company to know the number of retiring employ
 <br />
 <br />
 <br />
+## Results
 - Create a [retirement_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/19c1eb13c2efdc16b1b359975aa05fd6bb84ce4f/Data/retirement_titles.csv) table that holds all the titles of employees who were born between January 1, 1952 and December 31, 1955. Following section of the code ([Employee_Database_challenge](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/9ad29dae426e9bad4b13f59138cf436fd41dfb59/Queries/Employee_Database_challenge.sql)) was used for this query:
 
 ````
