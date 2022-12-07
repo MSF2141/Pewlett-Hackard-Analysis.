@@ -35,6 +35,7 @@ ORDER BY employees.emp_no;
 ```
 ````
 
+![retirement_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/b6b8c0763c37efad72bd4e16bbc0f0f3a0e1f39b/Data/retirement_titles.png)
 Because some employees may have multiple titles — for example, due to promotions — in the nex step the duplicate entries need to be omitted from the Employee Database. 
 
 
