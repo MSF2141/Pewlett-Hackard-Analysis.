@@ -35,7 +35,7 @@ ORDER BY employees.emp_no;
 ```
 ````
 
-Because some employees may have multiple titles — for example, due to promotions — in the nex step the duplicate entries need to be omitted from the employee Database. 
+Because some employees may have multiple titles — for example, due to promotions — in the nex step the duplicate entries need to be omitted from the Employee Database. 
 
 
 - Create an [unique_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/180ea5c039c4c21314f5b68bff2f06445709ba23/Data/unique_titles.csv) table that contains only the most recent title for each employee using the DISTINCT ON statement. Following code was used for this query:
