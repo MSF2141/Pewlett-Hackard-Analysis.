@@ -54,8 +54,11 @@ ORDER BY retirement_titles.emp_no, retirement_titles.to_date DESC;
 ```
 ````
 
+![unique_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/c61805636c03d2f8d474c9f75ff47ae822a1d5ca/Data/unique_titles.png)
 
-- Create a [retiring_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/667b71b70c010f8b582bccbe269f7a3c8654e115/Data/retiring_titles.csv) table that contains the number of retirement-age employees by their most recent job title using the COUNT statement and that takes into consideration only the current employees and excludes employees who have already left the company. Following code was used for this query: 
+
+
+- Create a [retiring_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/667b71b70c010f8b582bccbe269f7a3c8654e115/Data/retiring_titles.csv) table that contains the number of retirement-age employees by their most recent job title using the COUNT statement. In additon, the retiring_titles table takes into consideration only the current employees and all the employees who have already left the company were excludes from the data table. Following code was used for this query: 
 
 ````
 ```
@@ -69,8 +72,6 @@ GROUP BY unique_titles.title
 ORDER BY unique_titles.count DESC;
 ```
 ````
-
-Number of retiring employees by job title shown below:
 
 ![retiring_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/41bd283d906456bbdd0256832483ed4945f41d0a/Data/retiring_titles.png)
 
