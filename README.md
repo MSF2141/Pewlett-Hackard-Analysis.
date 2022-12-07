@@ -110,3 +110,15 @@ ORDER BY employees.emp_no;
 Analysis show that there are 72458 retiring employees at the PH company. Specifically, 25916 Senior Engineers, 24926 Senior Staffs, 9285 Engineers, 7363 Staffs, 3603 Technique Leaders, 1090 Assistant Engineers, and 2 Managers will be retiring. On the other side, there are only 1549 employees who are qualified to mentor the next generation of PH employees. 
 
 As a follow up analysis, it seems necessary to understand per each job title how many mentorship-eligible employees are currenntly working at the PH company. 
+For example, the below code would return that 414 Senior Staffs, 390 Engineers, 310 Staffs, 297	Senior Engineers, 77 Technique Leaders, and 61 Assistant Engineers are qualified to mentor the next generation of PH employees. 
+
+````
+```
+SELECT COUNT(mentorship_eligibilty.emp_no), mentorship_eligibilty.title
+--INTO mentorship_eligibilty_titles
+FROM mentorship_eligibilty
+WHERE mentorship_eligibilty.to_date = ('9999-01-01')
+GROUP BY mentorship_eligibilty.title
+ORDER BY mentorship_eligibilty.count DESC;
+```
+````
