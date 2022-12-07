@@ -122,3 +122,5 @@ GROUP BY mentorship_eligibilty.title
 ORDER BY mentorship_eligibilty.count DESC;
 ```
 ````
+
+![mentorship_eligibility_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/b46076910fdfff5a54a7185ecd257004b15c4726/Data/mentorship_eligibility_titles.png)
