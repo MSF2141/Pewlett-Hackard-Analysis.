@@ -39,7 +39,9 @@ ORDER BY employees.emp_no;
 Because some employees may have multiple titles — for example, due to promotions — in the nex step the duplicate entries need to be omitted from the Employee Database. 
 
 
-- Create a [unique_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/180ea5c039c4c21314f5b68bff2f06445709ba23/Data/unique_titles.csv) table that contains only the most recent title for each employee using the DISTINCT ON statement. Following code was used for this query:
+
+
+- Create a [unique_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/180ea5c039c4c21314f5b68bff2f06445709ba23/Data/unique_titles.csv) table that contains only the most recent title for each employee using the DISTINCT ON statement. Following section of the code ([Employee_Database_challenge](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/9ad29dae426e9bad4b13f59138cf436fd41dfb59/Queries/Employee_Database_challenge.sql)) was used for this query:
 
 ````
 ```
@@ -55,6 +57,7 @@ ORDER BY retirement_titles.emp_no, retirement_titles.to_date DESC;
 ````
 
 ![unique_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/c61805636c03d2f8d474c9f75ff47ae822a1d5ca/Data/unique_titles.png)
+
 
 
 
