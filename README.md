@@ -16,7 +16,7 @@ Analysis of the HR data for the PH company to know the number of retiring employ
 
 
 
-- Create a [retirement_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/19c1eb13c2efdc16b1b359975aa05fd6bb84ce4f/Data/retirement_titles.csv) table that holds all the titles of employees who were born between January 1, 1952 and December 31, 1955. 
+- Create a [retirement_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/19c1eb13c2efdc16b1b359975aa05fd6bb84ce4f/Data/retirement_titles.csv) table that holds all the titles of employees who were born between January 1, 1952 and December 31, 1955. Following code was used for this query:
 
 ````
 ```
@@ -35,9 +35,10 @@ ORDER BY employees.emp_no;
 ```
 ````
 
-Because some employees may have multiple titles — for example, due to promotions — in the nex step only most recent title should be kept in the Employee Database.
+Because some employees may have multiple titles — for example, due to promotions — in the nex step the duplicate entries need to be omitted from the employee Database. 
 
-- Create an [unique_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/180ea5c039c4c21314f5b68bff2f06445709ba23/Data/unique_titles.csv) table that contains only the most recent title for each employee using the DISTINT ON statement. 
+
+- Create an [unique_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/180ea5c039c4c21314f5b68bff2f06445709ba23/Data/unique_titles.csv) table that contains only the most recent title for each employee using the DISTINT ON statement. Following code was used for this query:
 
 ````
 ```
@@ -52,9 +53,23 @@ ORDER BY retirement_titles.emp_no, retirement_titles.to_date DESC;
 ```
 ````
 
-- 
-you’ll need to use the DISTINCT ON statement to create a table that contains the most recent title of each employee.
-There are duplicate entries for some employees because they have switched titles over the years. Use the following instructions to remove these duplicates and keep only the most recent title of each employee.
+
+-  Then, use the COUNT() function to create a table that has the number of retirement-age employees by most recent job title. Finally, because we want to include only current employees in our analysis, be sure to exclude those employees who have already left the company.
+
+````
+```
+SELECT COUNT(retirement_titles.emp_no), unique_titles.title
+INTO retiring_titles
+FROM retirement_titles
+LEFT JOIN unique_titles
+ON retirement_titles.emp_no = unique_titles.emp_no
+WHERE retirement_titles.to_date = ('9999-01-01')
+GROUP BY unique_titles.title
+ORDER BY unique_titles.count DESC;
+```
+````
+
+
 
 
 
@@ -62,7 +77,7 @@ There are duplicate entries for some employees because they have switched titles
 [Employee_Database_challenge](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/9ad29dae426e9bad4b13f59138cf436fd41dfb59/Queries/Employee_Database_challenge.sql)
 
 
-Because some employees may have multiple titles in the database—for example, due to promotions—you’ll need to use the DISTINCT ON statement to create a table that contains the most recent title of each employee. Then, use the COUNT() function to create a table that has the number of retirement-age employees by most recent job title. Finally, because we want to include only current employees in our analysis, be sure to exclude those employees who have already left the company.
+
 
 
 There are duplicate entries for some employees because they have switched titles over the years. Use the following instructions to remove these duplicates and keep only the most recent title of each employee.
