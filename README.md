@@ -44,7 +44,7 @@ Because some employees have multiple titles â€” for example, due to promotions â
 <br />
 <br />
 <br />
-The [unique_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/180ea5c039c4c21314f5b68bff2f06445709ba23/Data/unique_titles.csv) table (first ten rows out of 72458 shown below) contains only the most recent title for each employee using the DISTINCT ON statement. Following section of the code ([Employee_Database_challenge](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/eb6c106923eec32f0185da8f0593ece89dbb43c6/Queries/Employee_Database_challenge.sql)) was used for this query:
+The [unique_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/180ea5c039c4c21314f5b68bff2f06445709ba23/Data/unique_titles.csv) table (first ten rows out of 72458 shown below) contains only the most recent title for each retirement-age employee using the DISTINCT ON statement. In additon, the unique_titles table takes into consideration only the current employees and all the employees who have already left the company are excludes from the data table. Following section of the code ([Employee_Database_challenge](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/eb6c106923eec32f0185da8f0593ece89dbb43c6/Queries/Employee_Database_challenge.sql)) was used for this query:
 
 ````
 ```
@@ -108,11 +108,8 @@ ORDER BY employees.emp_no;
 ````
 
 ![mentorship_eligibility](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/d4505a32fc2131887dfc7e04daaa43f78b8a7225/Data/mentorship_eligibility.png)
-<br />
-<br />
-<br />
-<br />
-## Summary
-Analysis show that there are 25916 Senior Engineers, 24926 Senior Staffs, 9285 Engineers, 7363 Staffs, 3603 Technique Leaders, 1090 Assistant Engineers, and 2 Managers who will be retiring. On the other side, there are 1549 retirement-ready employees who are qualified to mentor then next generation of PH employees.
 
-- table (shown below) contains the number of retirement-age employees by their most recent job title using the COUNT statement. 
+## Summary
+Analysis show that there are 72458 retiring employees at the PH company. Specifically, 25916 Senior Engineers, 24926 Senior Staffs, 9285 Engineers, 7363 Staffs, 3603 Technique Leaders, 1090 Assistant Engineers, and 2 Managers will be retiring. On the other side, there are only 1549 employees who are qualified to mentor the next generation of PH employees. 
+
+As a follow up analysis, it seems necessary to understand per each job title how many mentorship-eligible employees are currenntly working at the PH company. 
