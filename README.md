@@ -38,7 +38,7 @@ ORDER BY employees.emp_no;
 Because some employees may have multiple titles — for example, due to promotions — in the nex step the duplicate entries need to be omitted from the employee Database. 
 
 
-- Create an [unique_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/180ea5c039c4c21314f5b68bff2f06445709ba23/Data/unique_titles.csv) table that contains only the most recent title for each employee using the DISTINT ON statement. Following code was used for this query:
+- Create an [unique_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/180ea5c039c4c21314f5b68bff2f06445709ba23/Data/unique_titles.csv) table that contains only the most recent title for each employee using the DISTINCT ON statement. Following code was used for this query:
 
 ````
 ```
@@ -54,7 +54,7 @@ ORDER BY retirement_titles.emp_no, retirement_titles.to_date DESC;
 ````
 
 
--  Then, use the COUNT() function to create a table that has the number of retirement-age employees by most recent job title. Finally, because we want to include only current employees in our analysis, be sure to exclude those employees who have already left the company.
+- Create a [retiring_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/667b71b70c010f8b582bccbe269f7a3c8654e115/Data/retiring_titles.csv) table that contains the number of retirement-age employees by their most recent job title using the COUNT statement and that takes into consideration only the current employees and excludes employees who have already left the company. Following code was used for this query: 
 
 ````
 ```
@@ -69,6 +69,9 @@ ORDER BY unique_titles.count DESC;
 ```
 ````
 
+Number of retiring employees by job title shown below:
+
+![retiring_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/41bd283d906456bbdd0256832483ed4945f41d0a/Data/retiring_titles.png)
 
 
 
@@ -80,7 +83,7 @@ ORDER BY unique_titles.count DESC;
 
 
 
-There are duplicate entries for some employees because they have switched titles over the years. Use the following instructions to remove these duplicates and keep only the most recent title of each employee.
+
 
 
 Following the initial [queries](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/a34a3655624e3f8baa822c887c8cd625d96ba158/Queries/queries.sql), the number of retiring employees was inquired using the following code [Employee_Database_challenge](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/9ad29dae426e9bad4b13f59138cf436fd41dfb59/Queries/Employee_Database_challenge.sql).
@@ -88,6 +91,4 @@ Following the initial [queries](https://github.com/MSF2141/Pewlett-Hackard-Analy
 - Determine the number of retiring employees per title:
 - 
 ## Results
-Number of retiring employees by job title shown below:
 
-![retiring_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/41bd283d906456bbdd0256832483ed4945f41d0a/Data/retiring_titles.png)
