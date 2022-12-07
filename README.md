@@ -103,5 +103,10 @@ ORDER BY employees.emp_no;
 ```
 ````
 
+![mentorship_eligibility](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/d4505a32fc2131887dfc7e04daaa43f78b8a7225/Data/mentorship_eligibility.png)
+<br />
+<br />
+<br />
+<br />
 ## Summary
 Analysis show that there are 25916 Senior Engineers, 24926 Senior Staffs, 9285 Engineers, 7363 Staffs, 3603 Technique Leaders, 1090 Assistant Engineers, and 2 Managers who will be retiring.
