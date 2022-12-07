@@ -8,27 +8,24 @@ Analysis of the HR data for the PH company to know the number of retiring employ
 - PostgreSQL and pgAdmin 4
 
 ## Analysis
-Create the Employee Database from six (6) source tables based on the following entity relationship diagram:
+- Create the Employee Database from six (6) source tables based on the following entity relationship diagram:
 ![EmployeeDB_corrected](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/8fe1f28002145b1d6d31c31df98789ae835ca774/EmployeeDB_corrected.png)
 
 The code for creation of the Employee Database can be found here:
 [schema](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/88f39d43b732f025475042ad5b01fd094b01443e/Queries/schema.sql).
+Source tables can be found here:
 
-Following the initial [queries](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/a34a3655624e3f8baa822c887c8cd625d96ba158/Queries/queries.sql), the number of retiring employees was inquired using the following code [Employee_Database_challenge](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/9ad29dae426e9bad4b13f59138cf436fd41dfb59/Queries/Employee_Database_challenge.sql).
 
-
-- Determine the number of retiring employees per title:
-Create a Retirement Titles table that holds all the titles of employees who were born between January 1, 1952 and December 31, 1955. 
-
+- Create a [retirement_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/19c1eb13c2efdc16b1b359975aa05fd6bb84ce4f/Data/retirement_titles.csv) table that holds all the titles of employees who were born between January 1, 1952 and December 31, 1955. 
 
 ````
 ```
 SELECT employees.emp_no,
-     employees.first_name,
-     employees.last_name,
-	 titles.title,
-     titles.from_date,
-	 titles.to_date
+       employees.first_name,
+       employees.last_name,
+       titles.title,
+       titles.from_date,
+       titles.to_date
 INTO retirement_titles
 FROM employees
 RIGHT JOIN titles
@@ -37,6 +34,7 @@ WHERE (birth_date BETWEEN '1952-01-01' AND '1955-12-31')
 ORDER BY employees.emp_no;
 ```
 ````
+
 [Employee_Database_challenge](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/9ad29dae426e9bad4b13f59138cf436fd41dfb59/Queries/Employee_Database_challenge.sql)
 
 [retirement_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/19c1eb13c2efdc16b1b359975aa05fd6bb84ce4f/Data/retirement_titles.csv)
@@ -47,6 +45,11 @@ Because some employees may have multiple titles in the database—for example, d
 
 There are duplicate entries for some employees because they have switched titles over the years. Use the following instructions to remove these duplicates and keep only the most recent title of each employee.
 
+
+Following the initial [queries](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/a34a3655624e3f8baa822c887c8cd625d96ba158/Queries/queries.sql), the number of retiring employees was inquired using the following code [Employee_Database_challenge](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/9ad29dae426e9bad4b13f59138cf436fd41dfb59/Queries/Employee_Database_challenge.sql).
+
+- Determine the number of retiring employees per title:
+- 
 ## Results
 Number of retiring employees by job title shown below:
 
