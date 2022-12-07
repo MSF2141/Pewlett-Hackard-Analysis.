@@ -36,7 +36,7 @@ ORDER BY employees.emp_no;
 ````
 
 ![retirement_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/b6b8c0763c37efad72bd4e16bbc0f0f3a0e1f39b/Data/retirement_titles.png)
-Because some employees may have multiple titles — for example, due to promotions — in the nex step the duplicate entries need to be omitted from the Employee Database. 
+Because some employees have multiple titles — for example, due to promotions — in the next step the duplicate entries need to be omitted from the Employee Database. 
 <br />
 <br />
 <br />
@@ -46,9 +46,9 @@ Because some employees may have multiple titles — for example, due to promotio
 ````
 ```
 SELECT DISTINCT ON (retirement_titles.emp_no) retirement_titles.emp_no,
-						    retirement_titles.first_name,
-						    retirement_titles.last_name,
-						    retirement_titles.title
+					      retirement_titles.first_name,
+					      retirement_titles.last_name,
+					      retirement_titles.title
 INTO unique_titles
 FROM retirement_titles
 WHERE retirement_titles.to_date = ('9999-01-01')
