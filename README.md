@@ -82,4 +82,4 @@ ORDER BY unique_titles.count DESC;
 <br />
 <br />
 ## Summary
-
+Analysis show that there are 25916 Senior Engineers, 24926 Senior Staffs, 9285 Engineers, 7363 Staffs, 3603 Technique Leaders, 1090 Assistant Engineers, and 2 Managers who will be retiring.
