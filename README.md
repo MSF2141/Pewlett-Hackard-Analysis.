@@ -84,7 +84,7 @@ ORDER BY unique_titles.count DESC;
 <br />
 <br />
 <br />
-The [mentorship_eligibility](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/b601dcc4068c422427f04241432a7411532b9523/Data/mentorship_eligibility.csv) table contains the list of employees who are eligible to participate in a mentorship program. Following section of the code ([Employee_Database_challenge](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/eb6c106923eec32f0185da8f0593ece89dbb43c6/Queries/Employee_Database_challenge.sql)) was used for this query: 
+The [mentorship_eligibility](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/b601dcc4068c422427f04241432a7411532b9523/Data/mentorship_eligibility.csv) table (first ten rows out of 1549 shown below) contains the list of employees who are eligible to participate in a mentorship program. Following section of the code ([Employee_Database_challenge](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/eb6c106923eec32f0185da8f0593ece89dbb43c6/Queries/Employee_Database_challenge.sql)) was used for this query: 
 
 ````
 ```
@@ -113,4 +113,6 @@ ORDER BY employees.emp_no;
 <br />
 <br />
 ## Summary
-Analysis show that there are 25916 Senior Engineers, 24926 Senior Staffs, 9285 Engineers, 7363 Staffs, 3603 Technique Leaders, 1090 Assistant Engineers, and 2 Managers who will be retiring.
+Analysis show that there are 25916 Senior Engineers, 24926 Senior Staffs, 9285 Engineers, 7363 Staffs, 3603 Technique Leaders, 1090 Assistant Engineers, and 2 Managers who will be retiring. On the other side, there are 1549 retirement-ready employees who are qualified to mentor then next generation of PH employees.
+
+- table (shown below) contains the number of retirement-age employees by their most recent job title using the COUNT statement. 
