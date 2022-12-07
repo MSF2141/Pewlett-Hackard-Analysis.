@@ -16,6 +16,9 @@ The code for creation of the Employee Database can be found here:
 
 Following the initial [queries](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/a34a3655624e3f8baa822c887c8cd625d96ba158/Queries/queries.sql), the number of retiring employees was inquired using the following code [Employee_Database_challenge](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/9ad29dae426e9bad4b13f59138cf436fd41dfb59/Queries/Employee_Database_challenge.sql).
 
+
+- Determine the number of retiring employees per title:
+
 ## Results
 Number of retiring employees by job title shown below:
 
