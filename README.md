@@ -16,7 +16,7 @@ Analysis of the HR data for the PH company to know the number of retiring employ
 <br />
 <br />
 <br />
-- Create a [retirement_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/19c1eb13c2efdc16b1b359975aa05fd6bb84ce4f/Data/retirement_titles.csv) table that holds all the titles of employees who were born between January 1, 1952 and December 31, 1955. Following code was used for this query:
+- Create a [retirement_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/19c1eb13c2efdc16b1b359975aa05fd6bb84ce4f/Data/retirement_titles.csv) table that holds all the titles of employees who were born between January 1, 1952 and December 31, 1955. Following section of the code ([Employee_Database_challenge](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/9ad29dae426e9bad4b13f59138cf436fd41dfb59/Queries/Employee_Database_challenge.sql)) was used for this query:
 
 ````
 ```
@@ -61,7 +61,7 @@ ORDER BY retirement_titles.emp_no, retirement_titles.to_date DESC;
 <br />
 <br />
 <br />
-- Create a [retiring_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/667b71b70c010f8b582bccbe269f7a3c8654e115/Data/retiring_titles.csv) table that contains the number of retirement-age employees by their most recent job title using the COUNT statement. In additon, the retiring_titles table takes into consideration only the current employees and all the employees who have already left the company were excludes from the data table. Following code was used for this query: 
+- Create a [retiring_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/667b71b70c010f8b582bccbe269f7a3c8654e115/Data/retiring_titles.csv) table that contains the number of retirement-age employees by their most recent job title using the COUNT statement. In additon, the retiring_titles table takes into consideration only the current employees and all the employees who have already left the company were excludes from the data table. Following section of the code ([Employee_Database_challenge](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/9ad29dae426e9bad4b13f59138cf436fd41dfb59/Queries/Employee_Database_challenge.sql)) was used for this query: 
 
 ````
 ```
@@ -77,12 +77,9 @@ ORDER BY unique_titles.count DESC;
 ````
 
 ![retiring_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/41bd283d906456bbdd0256832483ed4945f41d0a/Data/retiring_titles.png)
-
-
-
-
-- fff
-[Employee_Database_challenge](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/9ad29dae426e9bad4b13f59138cf436fd41dfb59/Queries/Employee_Database_challenge.sql)
-
+<br />
+<br />
+<br />
+<br />
 ## Summary
 
