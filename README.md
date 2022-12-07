@@ -20,7 +20,18 @@ Following the initial [queries](https://github.com/MSF2141/Pewlett-Hackard-Analy
 - Determine the number of retiring employees per title:
 Create a Retirement Titles table that holds all the titles of employees who were born between January 1, 1952 and December 31, 1955. Because some employees may have multiple titles in the database—for example, due to promotions—you’ll need to use the DISTINCT ON statement to create a table that contains the most recent title of each employee. Then, use the COUNT() function to create a table that has the number of retirement-age employees by most recent job title. Finally, because we want to include only current employees in our analysis, be sure to exclude those employees who have already left the company.
 
-
+SELECT employees.emp_no,
+     employees.first_name,
+     employees.last_name,
+	 titles.title,
+     titles.from_date,
+	 titles.to_date
+INTO retirement_titles
+FROM employees
+RIGHT JOIN titles
+ON employees.emp_no = titles.emp_no
+WHERE (birth_date BETWEEN '1952-01-01' AND '1955-12-31')
+ORDER BY employees.emp_no;
 
 [retirement_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/19c1eb13c2efdc16b1b359975aa05fd6bb84ce4f/Data/retirement_titles.csv)
 
