@@ -37,14 +37,7 @@ ORDER BY employees.emp_no;
 
 Because some employees may have multiple titles — for example, due to promotions — in the nex step only most recent title should be kept in the Employee Database.
 
-- Create a table that contains only the most recent title for each employee using the DISTINT ON statement. 
-
-you’ll need to use the DISTINCT ON statement to create a table that contains the most recent title of each employee.
-There are duplicate entries for some employees because they have switched titles over the years. Use the following instructions to remove these duplicates and keep only the most recent title of each employee.
-
-
-
-- fff
+- Create an [unique_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/180ea5c039c4c21314f5b68bff2f06445709ba23/Data/unique_titles.csv) table that contains only the most recent title for each employee using the DISTINT ON statement. 
 
 ````
 ```
@@ -59,7 +52,13 @@ ORDER BY retirement_titles.emp_no, retirement_titles.to_date DESC;
 ```
 ````
 
+- 
+you’ll need to use the DISTINCT ON statement to create a table that contains the most recent title of each employee.
+There are duplicate entries for some employees because they have switched titles over the years. Use the following instructions to remove these duplicates and keep only the most recent title of each employee.
 
+
+
+- fff
 [Employee_Database_challenge](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/9ad29dae426e9bad4b13f59138cf436fd41dfb59/Queries/Employee_Database_challenge.sql)
 
 
