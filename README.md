@@ -61,7 +61,7 @@ ORDER BY retirement_titles.emp_no, retirement_titles.to_date DESC;
 <br />
 <br />
 <br />
-The [retiring_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/667b71b70c010f8b582bccbe269f7a3c8654e115/Data/retiring_titles.csv) table contains the number of retirement-age employees by their most recent job title using the COUNT statement. In additon, the retiring_titles table takes into consideration only the current employees and all the employees who have already left the company were excludes from the data table. Following section of the code ([Employee_Database_challenge](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/9ad29dae426e9bad4b13f59138cf436fd41dfb59/Queries/Employee_Database_challenge.sql)) was used for this query: 
+The [retiring_titles](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/667b71b70c010f8b582bccbe269f7a3c8654e115/Data/retiring_titles.csv) table contains the number of retirement-age employees by their most recent job title using the COUNT statement. In additon, the retiring_titles table takes into consideration only the current employees and all the employees who have already left the company are excludes from the data table. Following section of the code ([Employee_Database_challenge](https://github.com/MSF2141/Pewlett-Hackard-Analysis./blob/9ad29dae426e9bad4b13f59138cf436fd41dfb59/Queries/Employee_Database_challenge.sql)) was used for this query: 
 
 ````
 ```
